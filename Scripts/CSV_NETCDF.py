@@ -14,7 +14,7 @@
 # This file takes an input directory from the TAR NOAA Select Files in NetCDF
 # Format and creates CSV delinated text files for the variable, lat, long,
 # depth, and date.  File should live in the root of the TAR directory and
-# varName needs to be defined before running.
+# varName needs to be defined before running. 
 #
 #
 #
@@ -23,9 +23,10 @@ import netCDF4
 import os
 import csv
 
+##add a copy to github
 directory = os.path.dirname(os.path.realpath(__file__))
 ##out_file = r'D:\~Share\WOA_NOAA_Select\Salinity\Salinity_DRB.txt'
-varName = 'Oxygen'
+varName = 'Phosphate'
 
 def processItmesInMainDir(dirName):
     lastPartOfFolderName = dirName.split('.')[2]
